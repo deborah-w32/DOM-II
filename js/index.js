@@ -52,11 +52,7 @@ window.addEventListener('load', () => {
     pageContentOnLoad.style.backgroundColor = '#f1cfb9'
 });
 
-const biggerButtons = document.querySelector('.btn')
-
-biggerButtons.addEventListener('dblclick', function (event) {
-    event.target.style.padding = '60px';
-});
+const biggerButtons = document.querySelectorAll('.btn')
 
 biggerButtons.forEach(item => {
     item.addEventListener('dblclick', event => {

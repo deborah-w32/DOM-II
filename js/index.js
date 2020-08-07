@@ -1,3 +1,4 @@
+// import gsap from 'gsap'
 // Your code goes here
 
 const logoLinks = document.querySelectorAll('nav');
@@ -55,8 +56,10 @@ window.addEventListener('load', () => {
 const biggerButtons = document.querySelectorAll('.btn');
 
 biggerButtons.forEach(item => {
-    item.addEventListener('dblclick', event => {
-        event.target.style.padding = '60px';
+    item.addEventListener('dblclick', (e) => {
+        e.stopPropagation();
+        item.style.padding = '60px';
+        item.style.border = '5px dotted #93E9BE';
     });
 });
 

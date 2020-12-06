@@ -4,10 +4,8 @@ const blueTraveler = document.getElementsByClassName('block--blue');
 const greenTraveler = document.getElementsByClassName('block--green');
 const pinkTraveler = document.getElementsByClassName('block--pink');
 const grayTraveler = document.getElementsByClassName('block--gray');
-const body = document.querySelector('body');
-const orderBlocks = document.getElementsByClassName('blocks');
 const blocks = document.querySelectorAll('.blocks .block');
-const block = document.getElementsByClassName('block')
+
 
 // eventListener
 

@@ -97,3 +97,9 @@ links.forEach(item => {
         console.log('Links do not fire!');
     });
 });
+
+// gsap stretch
+
+const pageTitle = document.getElementsByClassName('logo-heading');
+
+gsap.fromTo(pageTitle, {x:10}, {duration:1, x:270, ease: "bounce"});
